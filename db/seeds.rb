@@ -7,6 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+puts "starting seeds"
 
 Flat.create!(
   name: 'Light & Spacious Garden Flat London',
@@ -15,6 +16,8 @@ Flat.create!(
   price_per_night: 75,
   number_of_guests: 3
 )
+puts "created first flat"
+puts Flat.last
 
 Flat.create!(
   name: 'Cosy house in Berlin',
